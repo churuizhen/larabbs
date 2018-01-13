@@ -8372,6 +8372,20 @@ body {
   margin-top: 0px;
 }
 
+/* User profile page */
+
+.users-show-page .user-info .thumbnail {
+  margin-bottom: 0px;
+}
+
+/* User register page */
+
+.register-page img.captcha {
+  margin-bottom: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
