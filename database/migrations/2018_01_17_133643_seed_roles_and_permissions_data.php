@@ -17,8 +17,8 @@ class SeedRolesAndPermissionsData extends Migration
      */
     public function up()
     {
-        //清除缓存
-        app()['catche']->forget('spatie.permission.cache');
+        //清
+//        app()['cache']->forget('spatie.permission.cache');
         // 先创建权限
         Permission::create(['name' => 'manage_contents']);
         Permission::create(['name' => 'manage_users']);
@@ -45,7 +45,7 @@ class SeedRolesAndPermissionsData extends Migration
     public function down()
     {
         // 清除缓存
-        app()['cache']->forget('spatie.permission.cache');
+//        app()->cache->forget('spatie.permission.cache');
 
         // 清空所有数据表数据
         $tableNames = config('permission.table_names');
