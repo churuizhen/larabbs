@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'PagesController@index');
+Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
 //Auth::routes();
 //
 //Route::get('/home', 'HomeController@index')->name('home');
